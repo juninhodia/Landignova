@@ -1,0 +1,55 @@
+#nutraceuticals-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    font-family: var(--font-primary);
+    padding: 2rem;
+    background: var(--body) /* Um leve cinza de fundo para diferenciar a seção */
+}
+
+#nutraceuticals-section h2 {
+    font-size: 1.7rem;
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--color-title-primary);
+    margin-bottom: 2rem;
+
+}
+
+.item {
+    margin-bottom: 2rem;
+}
+
+.item img {
+    max-width: 6rem; /* Faz as imagens serem responsivas */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+.item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-title-secundary);
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.item p {
+    margin-bottom: 2rem;
+    color: var(--color-text-secundary); /* Um cinza escuro para o texto */
+}
+
+@media (max-width: 600px) {
+    .item {
+        padding: 0 1rem; /* Adiciona um pouco de padding nas telas menores */
+    }
+    
+    #nutraceuticals-section h2 {
+        font-size: 1.5rem;
+        padding: 1rem;
+        font-weight: 600;
+        color: var(--color-title-primary);
+        margin-bottom: 2rem;
+    
+    }
+}
